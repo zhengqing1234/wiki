@@ -1,0 +1,17 @@
+GET http://localhost:8080/hello
+Accept: application/json
+
+###
+POST http://localhost:8080/helloPost
+Content-Type: application/json
+
+> {%
+     client.test("helloPost",function(){
+            client.log(response.body);
+            if(response.status==200){
+                client.log("请求成功");
+            }
+     });
+ %}
+
+###
