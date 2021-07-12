@@ -1,0 +1,5 @@
+server:
+  port: 8181
+
+config:
+  txt : 今天天气不错
